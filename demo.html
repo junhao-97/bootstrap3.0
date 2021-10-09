@@ -4,15 +4,427 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口模式 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>97健身学院</title>
+    <!-- bootstrap核心样式文件 -->
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!-- 自己的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 站点图标 -->
+    <link rel="shortcut icon" href="imgs/power.ico" type="image/x-icon">
 </head>
 
 <body>
-    <h1>你好，世界！</h1>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- 头部 -->
+    <header id="ns_header">
+        <!-- 上部分 -->
+        <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="top-bar-1 col-md-2">
+                        <a href="#">
+                            <i class="icon-phone"></i>
+                            <span>关注微信号</span>
+                            <span class="caret"></span>
+                            <img src="imgs/vx.jpg" alt="97" width="130px">
+                        </a>
+                    </div>
+                    <div class="top-bar-2 col-md-5">
+                        <i class="icon-tel"></i>
+                        <span>8888-555-666 (服务时间: 9:00-21:00)</span>
+                    </div>
+                    <div class="top-bar-3 col-md-2">
+                        <a href="#">校企合作</a>
+                        <a href="#">培训师</a>
+                    </div>
+                    <div class="top-bar-4 col-md-3">
+                        <a class="btn btn-default btn-sm btn-primary" href="#" role="button">免费注册</a>
+                        <a class="text-muted" href="#" role="button" style="margin-left: 10px;">立即登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航条 -->
+        <nav class="navbar navbar-default navbar-static-top navbar-jh">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#j_nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand hidden-sm" href="#">
+                        <img src="imgs/navbar.png" alt="健身">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="j_nav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">关于我们</a></li>
+                        <li><a href="#">课程介绍</a></li>
+                        <li><a href="#">热门课程</a></li>
+                        <li><a href="#">名师授课</a></li>
+                        <li><a href="#">课堂互动</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /导航条 -->
+    </header>
+    <!-- /头部 -->
+    <!-- 轮播图 -->
+    <section id="ns_carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#ns_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#ns_carousel" data-slide-to="1"></li>
+            <li data-target="#ns_carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner " role="listbox">
+            <div class="item active" data-sm-img="imgs/Carousel1.jpg" data-lg-img="imgs/Carousel10.jpg">
+            </div>
+            <div class="item" data-sm-img="imgs/Carousel2.jpg" data-lg-img="imgs/Carousel20.jpg">
+            </div>
+            <div class="item" data-sm-img="imgs/Carousel3.jpg" data-lg-img="imgs/Carousel30.jpg">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#ns_carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#ns_carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+    <!-- /轮播图 -->
+    <!-- 关于我们 -->
+    <section id="ns_about" class="hidden-xs hi">
+        <!-- 标题 -->
+        <div class="title text-center">
+            <h1>
+                <strong>关于我们</strong>
+                <img src="imgs/star.png" alt="" class="img-responsive img-rounded">
+            </h1>
+        </div>
+        <!-- 主要内容 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted">体适能健身教练培训基地成立于2007年，迄今已有十五年历史，是培训健身私人教练、团操教练等的综合类院校。</p>
+                    <p class="text-muted">集研发、教学于一体，拥有健身行业人才和医学人员组成的强师资力量，走在“体医结合”的前沿，密切关注行业动态，不断研发健身行业市场潮流的新课程，</p>
+                    <p class="text-muted">是目前行业内课程丰富、内容更加深入的培训机构。秉持着“求知求德，自律自强”的精神，为中国健身行业培育了上万人次的健身教练，遍布于全国各地， 在社会上具有广泛的影响力，深受各大健身场馆的信任。</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="imgs/about.jpg" alt="核心团队" class="img-responsive hidden-sm hidden-xs">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /关于我们 -->
+    <!-- 产品特色 -->
+    <section id="ns_product">
+        <div class="container">
+            <div class="row">
+                <!-- Nav tabs -->
+                <div style="overflow: auto;">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#product1" aria-controls="home" role="tab" data-toggle="tab">在线大学</a></li>
+                        <li role="presentation"><a href="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+                        <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                        <li class="pull-right hidden-xs hidden-sm"><a href="#" aria-controls="settings" role="tab" data-toggle="tab">更多</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="product1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 pd_left">
+                                        <!-- 第一部分 -->
+                                        <div id="pd_one_1" class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="imgs/vx.jpg" alt="二维码" width="140px">
+                                                </a>
+                                            </div>
+                                            <div class="media-body text-muted" style="padding-top: 100px;">
+                                                <h5 class="media-heading">更多资讯欢迎</h5>
+                                                <h5 class="media-heading">关注健身学院</h5>
+                                            </div>
+                                        </div>
+                                        <!-- 第二部分 -->
+                                        <ol id="pd_one_2" class="breadcrumb lead">
+                                            <li><a href="#">瑜伽课程</a></li>
+                                            <li><a href="#">少儿体适能</a></li>
+                                            <li><a href="#">体态雕塑</a></li>
+                                            <li><a href="#">高级运动营养</a></li>
+                                        </ol>
+                                        <!-- 第三部分 -->
+                                        <h1 id="pd_one_3">
+                                            欢迎来到专业体型雕塑大学&nbsp;&nbsp;&nbsp;
+                                            <strong class="text-danger">体适能健身学院</strong>
+                                        </h1>
+                                        <!-- 第四部分 -->
+                                        <div id="pd_one_4">
+                                            <button class="btn btn-default btn-lg" type="submit" style="margin-right: 20px;">课程咨询</button>
+                                            <button class="btn btn-default btn-lg" type="submit">了解更多</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="imgs/product_1.jpg" alt="健身学院" class="img-responsive hidden-sm hidden-xs">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="product2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="imgs/product_2.jpg" alt="" class="img-responsive hidden-sm hidden-xs">
+                                    </div>
+                                    <div id="pd_two" class="col-md-8 pd_left">
+                                        <h1 class="text-warning">健身学院会员</h1>
+                                        <p class="lead">汇聚名师,为你呈现最好的课程内容，从零基础到专业健身教练。专属的会员社群和私人订制服务，1年365团本持续更新课程全部免费学习!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="product3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 pd_left">
+                                        <h1>
+                                            <strong class="text-danger">案例驱动 体系贯穿 全面系统</strong>
+                                        </h1>
+                                        <h3>
+                                            10-15分钟视频
+                                            <span class="text-warning">知识点拆分讲解</span>
+                                        </h3>
+                                        <h4 class="text-muted" style="margin: 15px;">凭借”高端智能设备+零穿戴+零接触+动静评估“的现代科技手段， 基础代谢、能量三剑客、营养素的四大天王、营养的SFMA、增肌、减脂
+                                        </h4>
+                                        <div class="badge" style="padding: 15px 10px; cursor: pointer;">已更新3000+视频|10000+订阅</div>
+                                    </div>
+                                    <div class="col-md-4 hidden-sm hidden-xs">
+                                        <img src="imgs/product_3.jpg" alt="优质视频" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /产品特色 -->
+    <!-- 热门课程 -->
+    <section id="ns_hot">
+        <!-- 标题 -->
+        <div class="title text-center">
+            <h1>
+                <strong>热门课程</strong>
+                <img src="imgs/star.png" alt="" class="img-responsive img-rounded">
+            </h1>
+        </div>
+        <!-- 内容 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> RPTC康复训练私人健身教练认证
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介: 19大模块私人教练培训课程 证书12本(包含健身教练职业能力培训证书)
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">616课时</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> 智能康复实战营
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介:众所周知，运动康复一直是体适能的拳头产品，在行业内广受欢迎。现根据市场的迫切需求，重磅推出《智能康复实战营》
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">6课时</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> 筋膜链康复课程
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介: 在传统解剖理念中，我们倾向于孤立地看待骨骼上的每一块肌肉
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">23课时</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> AFCC（EMS）健身与运动康复认证
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介: EMS是源于现代医学的高科技技术，一种应用于医疗、航天和专业运动员的专项技
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">216课时</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> 体态调整师认证
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介: 证书1本，《体态调整师资质认证》证书。
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">120课时</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object img-responsive img-circle img-thumbnail" style="width:100px" src="imgs/hot_1.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span> 3M之拉伸
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">
+                                课程简介: 3M之拉伸重新整理了“拉伸运动”，把医学和拉伸运动有效结合
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <span class="text-danger">48课时</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /热门课程 -->
+    <!-- 友情链接 -->
+    <section id="ns_link">
+        <div class="title text-center">
+            <h1>
+                <strong>友情链接</strong>
+                <img src="imgs/star.png" alt="" class="img-responsive img-rounded">
+            </h1>
+        </div>
+        <ul class="logs">
+            <li>
+                <a href="#"><img src="imgs/log1.jpg" alt="" width="120px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log2.jpg" alt="" width="180px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log3.jpg" alt="" width="120px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log4.jpg" alt="" width="120px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log5.jpg" alt="" width="120px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log6.jpg" alt="" width="120px"></a>
+            </li>
+            <li>
+                <a href="#"><img src="imgs/log7.jpg" alt="" width="120px"></a>
+            </li>
+        </ul>
+    </section>
+    <!-- /友情链接 -->
+    <!-- 尾部 -->
+    <footer id="ns_footer">
+        <div class="container hidden-sm hidden-xs">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-3 one col-md-offset-1">
+                    <div class="row">
+                        <ul class="col-md-6">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">课程介绍</a></li>
+                            <li><a href="#">热门课程</a></li>
+                        </ul>
+                        <ul class="col-md-6">
+                            <li><a href="#">名师授课</a></li>
+                            <li><a href="#">课堂互动</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 two">
+                    <h5>公司地址: 长沙市岳麓区中南大学城</h5>
+                    <h5>联系电话: 18888888888</h5>
+                    <h5>地址邮箱: 137068702@qq.com</h5>
+
+                </div>
+                <div class="col-md-4 three">
+                    <h5>联系我们:</h5>
+                    <a href="#" class="logo2">
+                        <img src="imgs/vxlog.png" alt="" class="img-responsive" style="width: 64px;" data-toggle="tooltip" data-placement="bottom" title="junhao97">
+                        <img src="imgs/wblog.png" alt="" class="img-responsive" style="width: 50px;" data-toggle="tooltip" data-placement="bottom" title="关注微博领福利">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /尾部 -->
+
+
+    <!-- 由于bootstrap先引入jquery -->
+    <script src="lib/js/jquery.js"></script>
+    <!-- 引入bootstrap的js插件 -->
+    <script src="lib/js/bootstrap.js"></script>
+    <!-- 自己的js -->
+    <script src="js/demo.js"></script>
 </body>
 
 </html>
